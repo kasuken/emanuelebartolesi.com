@@ -13,7 +13,7 @@ export const companies = [
     role: 'Full Stack Web Developer',
     skills: ['.NET 5', 'Azure', 'Microsoft 365', 'Blazor', 'GitHub', 'TypeScript', 'Visual Studio', 'Visual Studio Code'],
     period: '2018 - 2021',
-    logo: '/assets/images/logos/xi.png',
+    logo: '/assets/images/logos/xi_square.png',
   },
   {
     title: "IBV",

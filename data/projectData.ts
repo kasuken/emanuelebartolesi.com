@@ -38,5 +38,13 @@ export const projectsList = [
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
     description: `A Blazor library for loading spinners. Published on NuGet.`,
     techStack: ["Blazor", "C#", "CSS3"]
+  },
+  {
+    title: "stone.css",
+    site: "https://github.com/kasuken/stone.css",
+    imageLight: '/assets/images/projects/stonecss.png',
+    blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
+    description: `CSS styles for HTML elements for your next Proof of Concept project.`,
+    techStack: ["HTML5", "CSS3"]
   }
 ];

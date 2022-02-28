@@ -49,7 +49,7 @@ const dropdownLinks = [
   // { name: 'Tech Stack', path: '/tech-stack' },
   { name: 'Open Source', path: '/open-source' },
   // { name: 'Achievements', path: '/achievements' },
-  { name: 'Uses', path: '/uses' },
+  // { name: 'Uses', path: '/uses' },
   { name: 'Changelog', path: '/changelog' },
 ];
 

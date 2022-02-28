@@ -30,6 +30,7 @@ import { useRouter } from 'next/router';
 import { AccentPicker } from 'components/theme/Accent';
 import { useLinkColor } from 'components/theme';
 import { MotionBox } from 'components/shared/animations/motion';
+import { FaLaptop } from 'react-icons/fa';
 
 const webLinks = [
   { name: 'About', path: '/about' },
@@ -48,6 +49,7 @@ const dropdownLinks = [
   // { name: 'Tech Stack', path: '/tech-stack' },
   { name: 'Open Source', path: '/open-source' },
   // { name: 'Achievements', path: '/achievements' },
+  { name: 'Uses', path: '/uses' },
   { name: 'Changelog', path: '/changelog' },
 ];
 
@@ -101,6 +103,7 @@ const MenuLink = (props: MenuLinkProps) => {
     '/open-source': <Icon as={BsBook} size={18} color={props.color} />,
     '/achievements': <Icon as={BsCheckCircle} size={18} color={props.color} />,
     '/projects': <Icon as={MdTimeline} size={18} color={props.color} />,
+    '/uses': <Icon as={FaLaptop} size={18} color={props.color} />,
     '/changelog': <Icon as={CgArrowsExchange} size={18} color={props.color} />,
   };
 

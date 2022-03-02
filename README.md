@@ -28,7 +28,7 @@
 ## Running Locally
 
 ```sh
-git clone https://github.com/MA-Ahmad/myPortfolio
+git clone https://github.com/kasuken/emanuelebartolesi.com
 cd emanuelebartolesi.com && yarn install
 yarn dev
 ```

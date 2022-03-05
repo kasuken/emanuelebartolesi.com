@@ -2,12 +2,9 @@ import axios, { AxiosResponse } from "axios";
 import { IArticle } from "../interfaces/interface";
 import { convertMarkdownToHtml, sanitizeDevToMarkdown } from "./markdown";
 
-const username = "kasuken";
-const blogURL = "https://dev.to/kasuken";
-
 // Get all users articles from Dev.to and filter by ones with a canonical URL to your blog
 export const getAllArticles = async (): Promise<IArticle[]> => {
-  const params = { username, per_page: 1000 };
+  const params = { per_page: 1000 };
   const headers = { "api-key": process.env.DEVTO_APIKEY };
 
   const { data }: AxiosResponse = await axios.get(
@@ -22,7 +19,7 @@ export const getAllArticles = async (): Promise<IArticle[]> => {
 };
 
 const blogFilter = (article: IArticle): boolean =>
-  article.canonical.startsWith(blogURL);
+  article.canonical.startsWith(process.env.DEVTO_BLOGURL);
 
 export const getAllBlogArticles = async (): Promise<IArticle[]> => {
   const articles = await getAllArticles();
@@ -31,7 +28,7 @@ export const getAllBlogArticles = async (): Promise<IArticle[]> => {
 
 // Takes a URL and returns the relative slug to your website
 export const convertCanonicalURLToRelative = (canonical: string): string => {
-  return canonical.replace(blogURL, "");
+  return canonical.replace(process.env.DEVTO_BLOGURL, "");
 };
 
 

@@ -1,13 +1,12 @@
-import { useEffect } from 'react'
-import App, { AppProps } from 'next/app'
-import { ChakraProvider, Box } from '@chakra-ui/react'
-import AppLayout from 'components/layouts/appLayout'
-import { PrismGlobal } from 'components/theme/prism'
-import { useRouter } from 'next/router'
-import { AnimatePresence } from 'framer-motion'
-import { theme } from 'components/theme'
-import { AccentGlobal } from 'components/theme/Accent'
-import { FontsGlobal } from 'components/theme/fonts'
+import App, { AppProps } from 'next/app';
+import { ChakraProvider, Box } from '@chakra-ui/react';
+import AppLayout from 'components/layouts/appLayout';
+import { PrismGlobal } from 'components/theme/prism';
+import { useRouter } from 'next/router';
+import { AnimatePresence } from 'framer-motion';
+import { theme } from 'components/theme';
+import { AccentGlobal } from 'components/theme/Accent';
+import { FontsGlobal } from 'components/theme/fonts';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -29,11 +28,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         </AnimatePresence>
       </AppLayout>
     </ChakraProvider>
-  )
+  );
 }
 
 MyApp.getInitialProps = async (appContext) => {
   const appProps = await App.getInitialProps(appContext);
-  return { ...appProps }
-}
-export default MyApp
+  return { ...appProps };
+};
+export default MyApp;

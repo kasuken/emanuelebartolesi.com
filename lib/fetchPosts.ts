@@ -1,6 +1,4 @@
 import useSWR from 'swr'
-import { DEVTO_API_URL } from 'data/constants'
-import axios, { AxiosResponse } from 'axios'
 
 const API_URL = '/api/posts/'
 
@@ -18,12 +16,12 @@ type PostsPayload = {
 }
 
 async function getPosts(): Promise<PostsPayload> {
-  const res = await fetch(API_URL)
+  const res = await fetch(`${process.env.DEVTO_API_URL}/${API_URL}`)
   return res.json()
 }
 
 export const getDbPosts = () => {
-  const { data, error, mutate } = useSWR(API_URL, getPosts)
+  const { data, error, mutate } = useSWR(`${process.env.DEVTO_API_URL}/${API_URL}`, getPosts)
 
   return {
     dbPosts: data?.dbPosts,
@@ -34,7 +32,7 @@ export const getDbPosts = () => {
 
 export const getDevtoPosts = async () => {
   const res = await fetch(
-    `${DEVTO_API_URL}/articles?username=${process.env.DEVTO_USERNAME}`
+    `${process.env.DEVTO_API_URL}/articles?username=${process.env.DEVTO_USERNAME}`
   )
 
   if (res.status < 200 || res.status >= 300) {

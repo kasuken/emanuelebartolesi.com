@@ -3,3 +3,5 @@
 // export const GITHUB_REPO = 'emanuelebartolesi.com'
 
 // export const DEVTO_API_URL = 'https://dev.to/api'
+
+export const place_holder = ''

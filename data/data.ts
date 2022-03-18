@@ -35,6 +35,12 @@ export const companies = [
 
 export const awards = [
   {
+    title: 'Codemotion Ambassador',
+    alt: 'Codemotion Ambassador',
+    period: '2022',
+    logo: '/assets/images/logos/codemotion.png',
+  },
+  {
     title: 'GitHub Star',
     alt: 'GitHub Star',
     period: '2022',

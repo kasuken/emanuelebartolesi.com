@@ -1,14 +1,17 @@
 import useSWR from 'swr'
 
-// const API_URL = `${process.env.GITHUB_API_URL}/repos/${process.env.GITHUB_USERNAME}/${process.env.GITHUB_REPO}/pulls?state=all`
-
 const getData = async () => {
-  const res = await fetch(`${process.env.GITHUB_API_URL}/repos/${process.env.GITHUB_USERNAME}/${process.env.GITHUB_REPO}/pulls?state=all`)
+
+  const url = `${process.env.NEXT_PUBLIC_GITHUB_API_URL}/repos/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/${process.env.NEXT_PUBLIC_GITHUB_REPO}/pulls?state=all`;
+
+  console.log(url);
+
+  const res = await fetch(url)
   return res.json()
 }
 
 export const fetchPRsData = () => {
-  const { data, error, mutate } = useSWR(`${process.env.GITHUB_API_URL}/repos/${process.env.GITHUB_USERNAME}/${process.env.GITHUB_REPO}/pulls?state=all`, getData)
+  const { data, error } = useSWR("posts", getData)
   return {
     prData: data,
     isLoading: !error && !data,

@@ -6,10 +6,9 @@ import { PageSlideFade } from '../shared/animations/page-transitions'
 import RepositoryCard from './live-data-card'
 import StackGrid from 'react-stack-grid'
 import CardSkeleton from './card-skeleton'
-import { GITHUB_API_URL } from 'data/constants'
 
 const LiveData = () => {
-  const { get, loading, error, data } = useFetch(GITHUB_API_URL)
+  const { get, loading, error, data } = useFetch(process.env.NEXT_PUBLIC_GITHUB_API_URL)
   const [repos, setRepos] = useState([])
   const [isLargerThan720] = useMediaQuery('(min-width: 720px)')
   const [isLargerThan982] = useMediaQuery('(min-width: 982px)')

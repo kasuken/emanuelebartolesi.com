@@ -23,7 +23,9 @@ const LiveData = () => {
   }
 
   useEffect(() => {
-    get('/users/kasuken/repos?per_page=100').then((res) => {
+    const url = '/users/' + process.env.NEXT_PUBLIC_GITHUB_USERNAME + '/repos?per_page=100'
+
+    get(url).then((res) => {
       setRepos(
         res?.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 8)
       )
@@ -50,7 +52,6 @@ const LiveData = () => {
                 description={repo.description}
                 language={repo.language}
                 url={repo.svn_url}
-                // created_at={repo.created_at}
                 stargazers_count={repo.stargazers_count}
                 forks_count={repo.forks_count}
               />

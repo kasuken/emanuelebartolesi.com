@@ -18,7 +18,9 @@ const RepositoriesList = () => {
             </Header>
           </HStack>
           <Text color={useColorModeValue('gray.500', 'gray.200')} textAlign="left">
-            This page lists some of the open source repositories I have published or contributed to on GitHub 🧑‍💻.
+            This page lists some of the open source repositories I have published or contributed to on GitHub 🧑‍💻. <br />
+
+            You can find more repositories on my GitHub profile: <a href="https://github.com/kasuken" target="_blank">https://github.com/kasuken</a>
           </Text>
         </VStack>
         <LiveData />

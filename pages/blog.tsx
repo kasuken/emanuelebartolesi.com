@@ -123,8 +123,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     const { data: frontmatter } = matter(markdownWithMeta)
     const devPost = devtoPosts.filter(
       (data) =>
-        !data.canonical_url.includes('dev.to') &&
-        data.canonical_url.split('/blog/')[1] === p
+        !data.canonical_url.includes('dev.to')
     )[0]
 
     localPosts.push({

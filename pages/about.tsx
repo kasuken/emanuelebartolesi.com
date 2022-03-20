@@ -9,7 +9,7 @@ import {
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { FaGraduationCap, FaWindows } from 'react-icons/fa'
+import { FaWindows } from 'react-icons/fa'
 import { BsFillBriefcaseFill } from 'react-icons/bs'
 import {
   PageSlideFade,
@@ -17,7 +17,7 @@ import {
   CardTransition,
 } from 'components/shared/animations/page-transitions'
 import { MotionBox } from 'components/shared/animations/motion'
-import { companies, institutes, awards } from 'data/data'
+import { companies, awards } from 'data/data'
 import Header from 'components/shared/header'
 import PageLayout from 'components/layouts/pageLayout'
 import { Tags } from 'components/shared/Tags'
@@ -120,7 +120,7 @@ const Card = (props: CardProps) => {
   )
 }
 
-const About = ({ companies, institutes, awards }) => {
+const About = ({ companies, awards }) => {
   const { colorMode } = useColorMode()
 
   return (
@@ -205,7 +205,6 @@ export function getStaticProps() {
   return {
     props: {
       companies,
-      institutes,
       awards
     },
   }

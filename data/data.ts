@@ -47,6 +47,12 @@ export const awards = [
     logo: '/assets/images/logos/githubstar.png',
   },
   {
+    title: 'Microsoft MVP 2022',
+    alt: 'Microsoft MVP',
+    period: '2022',
+    logo: '/assets/images/logos/mvp.png',
+  },
+  {
     title: 'Microsoft MVP 2021',
     alt: 'Microsoft MVP',
     period: '2021',
@@ -258,13 +264,13 @@ export const skillsArray = [
 
 export const newContent = [
   {
-    link: '/blog/azure-trial-hackathon-moodflix-your-mood-our-suggestions-4p92',
-    text: 'I am participating on Azure dev.to Hackathon with Moodflix',
+    link: '/blog/my-journey-as-linkedin-technical-instructor-14bn',
+    text: 'My Journey as LinkedIn Technical Instructor',
     showNewTag: true,
   },
   {
-    link: '/blog/i-am-a-github-star-53dp',
-    text: 'I became a GitHub Star!',
+    link: '/blog/i-have-been-awarded-for-9-years-in-a-row-as-microsoft-mvp-28a5',
+    text: 'I have been awarded for 9 years in a row as Microsoft MVP',
     showNewTag: false,
   },
 ]

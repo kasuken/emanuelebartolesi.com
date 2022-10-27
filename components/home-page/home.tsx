@@ -60,7 +60,7 @@ const Home: React.FC<BlogPostProps> = (props) => {
               size={'full'}
               showBorder={true}
               borderColor={linkColor}
-              src={'/assets/images/youtube.gif'}
+              src={'/assets/images/superman.gif'}
             />
           </MotionBox>
         </MotionBox>

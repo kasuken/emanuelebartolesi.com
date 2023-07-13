@@ -35,12 +35,6 @@ export const companies = [
 
 export const awards = [
   {
-    title: 'Codemotion Ambassador',
-    alt: 'Codemotion Ambassador',
-    period: '2022',
-    logo: '/assets/images/logos/codemotion.png',
-  },
-  {
     title: 'GitHub Star',
     alt: 'GitHub Star',
     period: '2023',
@@ -57,6 +51,12 @@ export const awards = [
     alt: 'GitHub Star',
     period: '2022',
     logo: '/assets/images/logos/githubstar.png',
+  },
+  {
+    title: 'Codemotion Ambassador',
+    alt: 'Codemotion Ambassador',
+    period: '2022',
+    logo: '/assets/images/logos/codemotion.png',
   },
   {
     title: 'Microsoft MVP 2022',

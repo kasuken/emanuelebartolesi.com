@@ -298,14 +298,14 @@ export const skillsArray = [
 ]
 
 export const newContent = [
-  {
-    link: '/blog/my-journey-as-linkedin-technical-instructor-14bn',
-    text: 'My Journey as LinkedIn Technical Instructor',
+    {
+    link: '/blog/celebrating-10-years-as-a-microsoft-mvp-2bed',
+    text: 'Celebrating 10 Years as a Microsoft MVP 🎉',
     showNewTag: true,
   },
   {
-    link: '/blog/i-have-been-awarded-for-9-years-in-a-row-as-microsoft-mvp-28a5',
-    text: 'I have been awarded for 9 years in a row as Microsoft MVP',
+    link: '/blog/my-journey-as-linkedin-technical-instructor-14bn',
+    text: 'My Journey as LinkedIn Technical Instructor',
     showNewTag: false,
-  },
+  }
 ]

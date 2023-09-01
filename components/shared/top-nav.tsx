@@ -30,7 +30,7 @@ import { useRouter } from 'next/router';
 import { AccentPicker } from 'components/theme/Accent';
 import { useLinkColor } from 'components/theme';
 import { MotionBox } from 'components/shared/animations/motion';
-import { FaLaptop } from 'react-icons/fa';
+import { FaEnvelope, FaEnvelopeOpen, FaLaptop } from 'react-icons/fa';
 
 const webLinks = [
   { name: 'About', path: '/about' },
@@ -42,6 +42,7 @@ const mobileLinks = [
   { name: 'Tech Stack', path: '/tech-stack' },
   { name: 'Open Source', path: '/open-source' },
   { name: 'Blog', path: '/blog' },
+  { name: 'Newsletter', path: '/newsletter' },
   { name: 'Changelog', path: '/changelog' },
 ];
 
@@ -51,6 +52,7 @@ const dropdownLinks = [
   { name: 'Open Source', path: '/open-source' },
   // { name: 'Achievements', path: '/achievements' },
   { name: 'Uses', path: '/uses' },
+  { name: 'Newsletter', path: '/newsletter' },
   { name: 'Changelog', path: '/changelog' },
 ];
 
@@ -105,6 +107,7 @@ const MenuLink = (props: MenuLinkProps) => {
     '/achievements': <Icon as={BsCheckCircle} size={18} color={props.color} />,
     '/projects': <Icon as={MdTimeline} size={18} color={props.color} />,
     '/uses': <Icon as={FaLaptop} size={18} color={props.color} />,
+    '/newsletter': <Icon as={FaEnvelopeOpen} size={18} color={props.color} />,
     '/changelog': <Icon as={CgArrowsExchange} size={18} color={props.color} />,
   };
 

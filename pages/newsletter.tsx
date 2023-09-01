@@ -52,15 +52,15 @@ const Newsletter: NextPage<SkillProps> = () => {
             <br />
             <br />
 
-            <center>
+            <Text textAlign={center}>
               <a href="https://buttondown.email/kasuken" target="_blank">Subscribe to my newsletter</a>
-            </center>
+            </Text>
 
             <br />
 
-            <center>
+            <Text textAlign={center}>
               <a href="https://buttondown.email/kasuken/archive" target="_blank">View previous issues</a> - <a href="https://buttondown.email/kasuken/rss" target="_blank">Subscribe via rss</a>
-            </center>
+            </Text>
 
           </Text>
         </VStack>

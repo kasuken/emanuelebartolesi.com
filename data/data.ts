@@ -41,7 +41,7 @@ export const awards = [
     logo: '/assets/images/logos/githubstar.png',
   },
   {
-    title: 'Microsoft MVP 2022',
+    title: 'Microsoft MVP 2023 - 🔟yrs',
     alt: 'Microsoft MVP',
     period: '2023',
     logo: '/assets/images/logos/mvp.png',
@@ -83,7 +83,7 @@ export const awards = [
     logo: '/assets/images/logos/mvp.png',
   },
   {
-    title: 'Microsoft MVP 2018',
+    title: 'Microsoft MVP 2018 - 5️⃣yrs',
     alt: 'Microsoft MVP',
     period: '2018',
     logo: '/assets/images/logos/mvp.png',

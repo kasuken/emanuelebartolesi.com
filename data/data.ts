@@ -319,7 +319,7 @@ export const newContent = [
     {
     link: '/blog/celebrating-10-years-as-a-microsoft-mvp-2bed',
     text: 'Celebrating 10 Years as a Microsoft MVP 🎉',
-    showNewTag: true,
+    showNewTag: false,
   },
   {
     link: '/blog/my-journey-as-linkedin-technical-instructor-14bn',

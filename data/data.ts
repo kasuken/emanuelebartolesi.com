@@ -35,16 +35,34 @@ export const companies = [
 
 export const awards = [
   {
-    title: 'Codemotion Ambassador',
-    alt: 'Codemotion Ambassador',
-    period: '2022',
-    logo: '/assets/images/logos/codemotion.png',
+    title: 'GitHub Star of the Year',
+    alt: 'GitHub Star',
+    period: '2023',
+    logo: '/assets/images/logos/githubstar.png',
+  },
+  {
+    title: 'GitHub Star',
+    alt: 'GitHub Star',
+    period: '2023',
+    logo: '/assets/images/logos/githubstar.png',
+  },
+  {
+    title: 'Microsoft MVP 2023 - 🔟yrs',
+    alt: 'Microsoft MVP',
+    period: '2023',
+    logo: '/assets/images/logos/mvp.png',
   },
   {
     title: 'GitHub Star',
     alt: 'GitHub Star',
     period: '2022',
     logo: '/assets/images/logos/githubstar.png',
+  },
+  {
+    title: 'Codemotion Ambassador',
+    alt: 'Codemotion Ambassador',
+    period: '2022',
+    logo: '/assets/images/logos/codemotion.png',
   },
   {
     title: 'Microsoft MVP 2022',
@@ -71,7 +89,7 @@ export const awards = [
     logo: '/assets/images/logos/mvp.png',
   },
   {
-    title: 'Microsoft MVP 2018',
+    title: 'Microsoft MVP 2018 - 5️⃣yrs',
     alt: 'Microsoft MVP',
     period: '2018',
     logo: '/assets/images/logos/mvp.png',
@@ -298,14 +316,14 @@ export const skillsArray = [
 ]
 
 export const newContent = [
+    {
+    link: '/blog/celebrating-10-years-as-a-microsoft-mvp-2bed',
+    text: 'Celebrating 10 Years as a Microsoft MVP 🎉',
+    showNewTag: false,
+  },
   {
     link: '/blog/my-journey-as-linkedin-technical-instructor-14bn',
     text: 'My Journey as LinkedIn Technical Instructor',
-    showNewTag: true,
-  },
-  {
-    link: '/blog/i-have-been-awarded-for-9-years-in-a-row-as-microsoft-mvp-28a5',
-    text: 'I have been awarded for 9 years in a row as Microsoft MVP',
     showNewTag: false,
-  },
+  }
 ]

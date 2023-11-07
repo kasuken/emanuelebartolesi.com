@@ -35,6 +35,12 @@ export const companies = [
 
 export const awards = [
   {
+    title: 'GitHub Star of the Year',
+    alt: 'GitHub Star',
+    period: '2023',
+    logo: '/assets/images/logos/githubstar.png',
+  },
+  {
     title: 'GitHub Star',
     alt: 'GitHub Star',
     period: '2023',

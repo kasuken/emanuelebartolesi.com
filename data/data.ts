@@ -43,6 +43,24 @@ export const companies = [
 
 export const awards = [
   {
+    title: 'GitHub Star',
+    alt: 'GitHub Star',
+    period: '2025',
+    logo: '/assets/images/logos/githubstar.png',
+  },
+  {
+    title: 'Microsoft MVP 2024 - 11yrs',
+    alt: 'Microsoft MVP',
+    period: '2024',
+    logo: '/assets/images/logos/mvp.png',
+  },
+  {
+    title: 'GitHub Star',
+    alt: 'GitHub Star',
+    period: '2024',
+    logo: '/assets/images/logos/githubstar.png',
+  },
+  {
     title: 'GitHub Star of the Year',
     alt: 'GitHub Star',
     period: '2023',

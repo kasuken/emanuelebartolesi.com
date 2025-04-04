@@ -1,10 +1,18 @@
 export const companies = [
   {
+    title: 'Xebia',
+    alt: 'Xebia',
+    role: 'Senior Cloud Engineer',
+    skills: ['.NET', 'Azure', 'Artificial Intelligence', 'Blazor', 'GitHub', 'TypeScript', 'Visual Studio', 'Visual Studio Code'],
+    period: '2025 - Present',
+    logo: '/assets/images/logos/xebia_logo.jpeg',
+  },
+  {
     title: 'SoftwareONE',
     alt: 'SoftwareONE',
     role: 'Microsoft 365 Architect',
     skills: ['.NET 6', 'Azure', 'Microsoft 365', 'Blazor', 'GitHub', 'TypeScript', 'Visual Studio', 'Visual Studio Code'],
-    period: '2021 - Present',
+    period: '2021 - 2024',
     logo: '/assets/images/logos/swo.png',
   },
   {
